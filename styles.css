@@ -1,0 +1,60 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+
+/* general */
+* {
+  padding: 1%;
+  margin: 0;
+  font-family: "Cinzel", serif;
+}
+/* parte principal*/
+body {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1px;
+  background: url(./assets/fondo\ vader.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+/* textos */
+p {
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+}
+figcaption {
+  color: gold;
+  size: 12em;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 5em;
+}
+.lista {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.63);
+
+  cursor: pointer;
+  display: inline;
+  text-transform: capitalize;
+  font-size: 3em;
+}
+.lista:hover {
+  background-color: rgba(85, 83, 185, 0.842);
+}
+.anakin h2 {
+  font-size: 2.5em;
+  color: white;
+  -webkit-text-stroke: 1px rgb(48, 14, 238);
+}
+/* logos */
+.logoprincipal {
+  width: 60%;
+  height: auto;
+  align-items: center;
+}
