@@ -3,56 +3,72 @@
 
 /* general */
 * {
-  padding: 1%;
-  margin: 0;
+  padding: 2%;
+  margin: auto;
   font-family: "Cinzel", serif;
 }
-/* parte principal*/
+/* principal*/
 body {
   text-align: center;
   width: 100%;
   margin: 0 auto;
   padding: 1px;
   background: url(./assets/fondo\ vader.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
   background-size: cover;
+  /* poner en gris el background*/
 }
-/* textos */
-p {
-  color: white;
-  text-align: center;
-  font-size: 1.3em;
-}
-figcaption {
-  color: gold;
-  size: 12em;
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 h1 {
   color: goldenrod;
-  font-size: 5em;
+  font-size: 2.5em;
 }
-.lista {
+
+/* textos */
+p {
+  color: white;
+  text-align_: center;
+  font-size: 1.2em;
+}
+figcaption {
+  color: gold;
+  font-size: 1em;
+}
+
+/* menues*/
+
+.menu {
   text-decoration: none;
   color: rgba(245, 245, 245, 0.63);
-
   cursor: pointer;
   display: inline;
   text-transform: capitalize;
-  font-size: 3em;
+  font-size: 1.5em;
 }
-.lista:hover {
-  background-color: rgba(85, 83, 185, 0.842);
+.menu:hover {
+  background-color: rgb(93, 93, 231);
 }
+/*personajes*/
+
 .anakin h2 {
-  font-size: 2.5em;
-  color: white;
-  -webkit-text-stroke: 1px rgb(48, 14, 238);
+  font-size: 3em;
+  color: rgb(158, 158, 16);
+  -webkit-text-stroke: 1px rgb(233, 233, 233);
 }
+.transform h2 {
+  font-size: 3em;
+  color: rgb(233, 229, 17);
+  -webkit-text-stroke: 1px rgb(193, 196, 204);
+}
+/* imagenes*/
+
 /* logos */
+
 .logoprincipal {
   width: 60%;
   height: auto;
