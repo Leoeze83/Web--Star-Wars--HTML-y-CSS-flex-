@@ -1,13 +1,38 @@
-/* import */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+/* imports */
+
+/* paleta personalizada */
+:root {
+  --main-dark: #590f15;
+  --main-medium: #bf1f2c;
+  --main-fuente2: #f2b90c;
+  --main-fuente: #f2a30f;
+  --main-borde: #f28e13;
+}
+/* fuente  : COLOCAR LAS URL Y FORMAT ENTRE ""*/
+@font-face {
+  font-family: "STARWARS";
+  src: url("./assets/starwars/STARWARS.eot") format("eot"), url("./assets/starwars/STARWARS.svg") format("svg"), url("./assets/starwars/STARWARS.ttf") format("ttf"), url("./assets/starwars/STARWARS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "STARWARS", sans-serif; */
+
+/* edicion CSS del HTML */
 
 /* general */
 * {
   padding: 1%;
-  margin: auto;
-  font-family: "Cinzel", serif;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "STARWARS", sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 /* principal*/
 body {
@@ -15,7 +40,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 1px;
-  background: url(./assets/fondo\ vader.jpg) no-repeat center center fixed;
+  background: url(./assets/fondo\ vader\ filtro.jpg) no-repeat center center fixed;
   background-size: cover;
   /* poner en gris el background*/
 }
@@ -27,8 +52,10 @@ header {
 }
 
 h1 {
-  color: goldenrod;
-  font-size: 2.3em;
+  color: var(--main-fuente2);
+  font-size: 2.5em;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--main-dark);
 }
 
 nav {
@@ -61,8 +88,8 @@ a {
 /* textos */
 
 p {
-  color: white;
-  text-align_: center;
+  color: rgb(250, 231, 122);
+  text-align: center;
   font-size: 1.2em;
 }
 figcaption {
@@ -74,26 +101,26 @@ figcaption {
 
 .anakin h2 {
   font-size: 3em;
-  color: rgb(158, 158, 16);
-  -webkit-text-stroke: 1px rgb(233, 233, 233);
+  color: var(--main-fuente2);
 }
 .transform h2 {
   font-size: 3em;
-  color: rgb(233, 229, 17);
-  -webkit-text-stroke: 1px rgb(193, 196, 204);
+  color: whitesmoke;
 }
 .darthvader h2 {
   font-size: 3em;
-  color: rgb(233, 229, 17);
-  -webkit-text-stroke: 1px rgb(193, 196, 204);
+  color: var(--main-medium);
+  -webkit-text-stroke: 1px var(--main-dark);
 }
 h3 {
   font-size: 1.6em;
-  color: rgb(192, 19, 19);
+  color: var(--main-borde);
 }
 h4 {
-  font-size: 1.3em;
-  background: rgb(252, 226, 80);
+  font-size: 1.5em;
+  color: var(--main-dark);
+  stroke: blue;
+  background: var(--main-fuente2);
   border-radius: 0.5rem;
   width: 10em;
 }
@@ -102,7 +129,8 @@ h4 {
 /* logos */
 
 .logoprincipal {
-  width: 60%;
+  width: 55%;
   height: auto;
   align-items: center;
+  filter: opacity(70%);
 }
