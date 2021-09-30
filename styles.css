@@ -29,7 +29,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+a {
   font-family: "STARWARS", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -64,25 +65,25 @@ nav {
 
 /* menues*/
 
-button {
+.botonmenu {
   background: none;
-  border: 0px;
+  border-style: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.botonmenu:hover {
+  background-color: rgb(89, 89, 216);
+  border-radius: 1.5em;
+  transition: all 1s;
 }
 a {
   text-decoration: none;
-  font-size: 1.6em;
-  color: rgba(245, 245, 245, 0.63);
+  font-size: 2.5em;
+  color: var(--main-fuente);
   font-weight: 600;
-}
-
-.menu {
-  cursor: pointer;
-  display: inline;
-  text-transform: capitalize;
-}
-.menu:hover {
-  background-color: rgb(106, 106, 243);
-  border-radius: 1.5em;
+  -webkit-text-stroke: 1px var(--main-dark);
 }
 
 /* textos */
@@ -94,7 +95,7 @@ p {
 }
 figcaption {
   color: gold;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 /*personajes*/
@@ -115,6 +116,7 @@ figcaption {
 h3 {
   font-size: 1.6em;
   color: var(--main-borde);
+  -webkit-text-stroke: 1px var(--main-dark);
 }
 h4 {
   font-size: 1.5em;
@@ -154,7 +156,7 @@ form {
   font-weight: bold;
   font-size: 1.1em;
 }
-
+.
 /* footer */
 
 .firma {
