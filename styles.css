@@ -43,13 +43,13 @@ body {
   padding: 1px;
   background: url(./assets/fondo\ vader\ filtro.jpg) no-repeat center center fixed;
   background-size: cover;
-  /* poner en gris el background*/
 }
 
 header {
   position: sticky;
   top: 0px;
   z-index: 10;
+  background-color: azure;
 }
 
 h1 {
@@ -156,7 +156,7 @@ form {
   font-weight: bold;
   font-size: 1.1em;
 }
-.
+
 /* footer */
 
 .firma {
